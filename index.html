@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./app.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <section class="fizzbuzz pt-5">
+        <div class="container">
+            <h1 class="text-center">FizzBuzz</h1>
+
+            <form class="fizzbuzz-form mb-3" id="fizzBuzzForm">
+                <input class="mb-3 form-control" id="fizzBuzzInput" placeholder="Please enter a number" type="number">
+
+                <div class="alert alert-danger d-none" id="alert">Not divided by 3, 5 and 15!</div>
+                <button class="d-block mx-auto btn btn-primary">Check</button>
+            </form>
+
+
+            <ul class="result-list d-flex justify-content-between gap-3 list-unstyled" id="valuesList">
+                <li class="result-item px-5 text-white py-2 bg-primary rounded-2" id="fizzValues">
+                    Fizz values: 
+                </li>
+                <li class="result-item px-5 text-white py-2 bg-warning rounded-2" id="buzzValues">
+                    Buzz values: 
+                </li>
+                <li class="result-item px-5 text-white py-2 bg-info rounded-2" id="fizzBuzzValues">
+                    FizzBuzz values: 
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
